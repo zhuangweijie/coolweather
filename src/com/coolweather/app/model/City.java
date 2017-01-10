@@ -14,7 +14,7 @@ public class City {
 		this.id = id;
 	}
 	
-	public String getcityName(){
+	public String getCityName(){
 		return cityName;
 	}
 	

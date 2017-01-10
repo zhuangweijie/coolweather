@@ -15,7 +15,7 @@ public class CoolWeatherDB {
 	/**
 	 * 数据库名
 	 */
-	public static final String DB_NAME = "cool_weather";
+	public static final String DB_NAME = "cool_weather.db";
 	
 	/**
 	 * 数据库版本
@@ -83,7 +83,7 @@ public class CoolWeatherDB {
 	public void saveCity(City city){
 		if(city != null){
 			ContentValues values = new ContentValues();
-			values.put("city_name", city.getcityName());
+			values.put("city_name", city.getCityName());
 			values.put("city_code", city.getCityCode());
 			values.put("province_id", city.getProvinceId());
 			db.insert("City", null, values);
